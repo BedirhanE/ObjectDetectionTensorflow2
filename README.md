@@ -96,11 +96,13 @@ def run_detector(detector, path):
   display_image(image_with_boxes)
 
 # Örnek kullanım
+
 run_detector(detector, downloaded_image_path)
 
 Bu kod parçası, belirtilen Faster R-CNN modelini TensorFlow Hub'dan yükler ve bir resim dosyasını analiz ederek nesne tespiti yapar. Sonuçları ekranda görselleştirir.
 
 #Detaylar
+
 Bu örnek, TensorFlow Hub kullanarak bir önceden eğitilmiş Faster R-CNN modelini yükleyip kullanmayı gösterir. run_detector fonksiyonu, belirtilen resim üzerinde nesne tespiti yapar, sonuçları ekrana yazdırır ve görselleştirir.
 
 # Örnek Kullanım: Birden Fazla Resim Üzerinde Nesne Tespiti
@@ -128,6 +130,7 @@ def detect_img(image_url):
   print("Inference time:", end_time - start_time)
 
 # Örnek kullanım
+
 detect_img(image_urls[0])
 detect_img(image_urls[1])
 detect_img(image_urls[2])
@@ -138,9 +141,11 @@ detect_img(image_urls[4])
 Bu kod parçası, belirtilen resim URL'leri üzerinde Faster R-CNN modelini kullanarak nesne tespiti yapar ve sonuçları ekranda görselleştirir
 
 #Detaylar
+
 Bu örnek, bir dizi resim URL'si üzerinde döngü kullanarak nesne tespiti yapma sürecini gösterir.
 Her bir resmin nesne tespiti sonuçları, ayrı ayrı ekranda görselleştirilir.
 
 #Not
+
 Bu örnek, TensorFlow Hub üzerinden alınan bir modeli kullanarak sadece öğrenme amacıyla tasarlanmıştır. Kodu inceleyerek ve özelleştirerek kendi projenize uyarlayabilirsiniz.
 
